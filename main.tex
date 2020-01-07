@@ -1,0 +1,80 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_DE
+\documentclass[ngerman]{article}
+
+\usepackage{arxivDE}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	citestyle=authoryear,
+	hyperref
+]{biblatex}
+\usepackage{csquotes}
+\usepackage[ngerman]{babel}
+\usepackage[ngerman=ngerman-x-latest]{hyphsubst}
+
+\usepackage{booktabs}
+
+\usepackage{siunitx}
+\sisetup{locale=DE}
+
+
+\usepackage{hyperref}
+\usepackage{url}
+
+\addbibresource{references.bib}
+\graphicspath{{figures/}, {images/}}
+
+\title{
+    Multimodaler Bedeutungstransfer vom Text zum Bild.\\
+    Granulare Bildklassifikation durch Verteilungssemantik.
+}
+
+\author{
+	Simon Donig \href{https://orcid.org/0000-0002-1741-466X}{\includegraphics[scale=0.06]{orcid.png}}\\
+    Lehrstuhl für Digital Humanities\\
+    Universität Passau, Deutschland\\
+    \url{simon.donig@uni-passau.de}\\
+    \And
+    Maria Christoforaki \\
+    Lehrstuhl für Data Science\\
+    Institut für Informatik\\
+    Universität St.Gallen, Schweiz \\
+    \url{maria.christoforaki@unisg.ch} \\
+    \AND
+    Bernhard Bermeitinger \href{https://orcid.org/0000-0002-2524-1850}{\includegraphics[scale=0.06]{orcid.png}} \\
+    Lehrstuhl für Data Science\\
+    Institut für Informatik\\
+    Universität St.Gallen, Schweiz \\
+    \url{bernhard.bermeitinger@unisg.ch} \\
+    \And
+    Siegfried Handschuh \\
+    Lehrstuhl für Data Science\\
+    Institut für Informatik\\
+    Universität St.Gallen, Schweiz \\
+    \url{siegfried.handschuh@unisg.ch} \\
+}
+
+\date{Dezember 2019}
+
+\hypersetup{
+	pdftitle={Multimodaler Bedeutungstransfer vom Text zum Bild. Granulare Bildklassifikation durch Verteilungssemantik.},
+	pdfauthor={Simon Donig, Maria Christoforaki, Bernhard Bermeitinger, Siegfried Handschuh},
+	pdfkeywords={deep learning, artificial neural networks, digital humanities, distributional semantics, neoclassicism}
+}
+
+\begin{document}
+
+\maketitle
+
+\input{body.tex}
+
+\printbibliography
+
+\end{document}
