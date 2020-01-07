@@ -29,7 +29,6 @@ jobs:
           prerelease: false
 
       # BUILD 2016
-
       - name: Use TeXLive 2016
         uses: bermeitinger-b/gh-latexmk@master
         with:

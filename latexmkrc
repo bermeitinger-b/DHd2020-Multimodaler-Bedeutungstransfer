@@ -11,4 +11,4 @@ $postscript_mode = 0;
 @generated_exts = (@generated_exts, 'synctex.gz');
 @generated_exts = (@generated_exts, 'run.xml');
 
-$clean_ext = "nav out snm vrb upa pdfpc xdv ttt";
+$clean_ext = "bbl nav out snm vrb upa pdfpc xdv ttt";
