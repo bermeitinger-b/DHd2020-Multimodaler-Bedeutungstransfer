@@ -38,13 +38,13 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: main-2016.pdf
-          path: main.pdf
+          path: /out/artifact/main.pdf
 
       - name: Publish ZIP
         uses: actions/upload-artifact@v1
         with:
           name: main-2016.zip
-          path: main.zip
+          path: /out/artifact/main.zip
 
       # RELEASE 2016
       - name: Upload Release Asset (2016 pdf)
@@ -53,7 +53,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: main.pdf
+          asset_path: /out/artifact/main.pdf
           asset_name: main-2016.pdf
           asset_content_type: application/pdf
       
@@ -63,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: main.zip
+          asset_path: /out/artifact/main.zip
           asset_name: main-2016.zip
           asset_content_type: application/zip
 
@@ -77,13 +77,13 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: main-latest.pdf
-          path: main.pdf
+          path: /out/artifact/main.pdf
 
       - name: Publish ZIP
         uses: actions/upload-artifact@v1
         with:
           name: main-latest.zip
-          path: main.zip
+          path: /out/artifact/main.zip
 
       # RELEASE LATEST
       - name: Upload Release Asset (latest pdf)
@@ -92,7 +92,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: main.pdf
+          asset_path: /out/artifact/main.pdf
           asset_name: main-latest.pdf
           asset_content_type: application/pdf
       
@@ -102,7 +102,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: main.zip
+          asset_path: /out/artifact/main.zip
           asset_name: main-latest.zip
           asset_content_type: application/zip
 
