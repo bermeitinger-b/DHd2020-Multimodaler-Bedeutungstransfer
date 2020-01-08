@@ -34,18 +34,6 @@ jobs:
         with:
           texlive: 2016
 
-      - name: Publish PDF
-        uses: actions/upload-artifact@v1
-        with:
-          name: main-2016.pdf
-          path: /out/main.pdf
-
-      - name: Publish ZIP
-        uses: actions/upload-artifact@v1
-        with:
-          name: main-2016.zip
-          path: /out/main.zip
-
       # RELEASE 2016
       - name: Upload Release Asset (2016 pdf)
         uses: actions/upload-release-asset@v1.0.1
@@ -73,18 +61,6 @@ jobs:
         with:
           texlive: latest
       
-      - name: Publish PDF
-        uses: actions/upload-artifact@v1
-        with:
-          name: main-latest.pdf
-          path: /out/main.pdf
-
-      - name: Publish ZIP
-        uses: actions/upload-artifact@v1
-        with:
-          name: main-latest.zip
-          path: /out/main.zip
-
       # RELEASE LATEST
       - name: Upload Release Asset (latest pdf)
         uses: actions/upload-release-asset@v1.0.1
